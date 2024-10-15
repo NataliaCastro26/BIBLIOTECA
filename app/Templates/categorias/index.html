@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Categorías</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='categoria.css') }}">
+</head>
+<body>
+
+    <div class="main_container">
+        <div class="content">
+            <h1>LISTA DE CATEGORIAS</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for categoria in categorias %}
+                    <tr>
+                        <td>{{ categoria.id }}</td>
+                        <td>{{ categoria.nombre }}</td>
+                        <td class="actions">
+                            <a href="{{ url_for('categoria.edit', id=categoria.id) }}" class="btn">Editar</a>
+                            <form action="{{ url_for('categoria.delete', id=categoria.id) }}" method="POST" style="display:inline;">
+                                <button type="submit" class="delete">Eliminar</button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <div class="link_container">
+                <a href="{{ url_for('categoria.add') }}" class="btn">Agregar Categoría</a>
+                <a href="{{ url_for('libro.inicio') }}"class="btn">IR A LIBROS</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

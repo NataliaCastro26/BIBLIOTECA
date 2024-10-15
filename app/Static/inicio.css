@@ -1,0 +1,130 @@
+/* Estilo general */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f0e6; /* Fondo con tono cálido */
+    color: #3e2723; /* Color de texto oscuro */
+}
+
+header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    font-family: 'Garamond', serif;
+    color: #5a3e2b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: #5a3e2b;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Verdana', sans-serif;
+}
+
+nav a:hover {
+    color: #c19a6b;
+    text-decoration: underline;
+}
+
+/* Sección Hero */
+.hero {
+    text-align: center;
+    padding: 180px 20px;
+    background: url('https://i.pinimg.com/736x/32/7b/a4/327ba4c6d9ad4b28bab9ef9f0efd6352.jpg') no-repeat center center/cover;
+}
+
+.hero h2 {
+    font-size: 2.8em;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-family: 'Georgia', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 25px;
+    color: #f5f0e6;
+    font-style: italic;
+}
+
+.btn {
+    background-color: #d2b48c;
+    color: #3e2723;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: 'Verdana', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #c19a6b;
+    transform: scale(1.05);
+}
+
+/* Sección de Características */
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+.feature {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 22%;
+    transition: transform 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature h3 {
+    font-size: 1.6em;
+    margin-top: 0;
+    color: #5a3e2b;
+    font-family: 'Garamond', serif;
+}
+
+.feature p {
+    color: #666;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Pie de página */
+footer {
+    background-color: #3e2723;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Verdana', sans-serif;
+    font-size: 0.9em;
+}

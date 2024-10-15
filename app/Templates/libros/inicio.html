@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Libros</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='categoria.css') }}">
+</head>
+<body>
+
+    <div class="main_container">
+        <div class="content">
+            <h1>LISTA DE LIBROS</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Título</th>
+                        <th>Género</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for libro in libros %}
+                    <tr>
+                        <td>{{ libro.id }}</td>
+                        <td>{{ libro.titulo }}</td>
+                        <td>{{ libro.genero }}</td>
+                        <td class="actions">
+                            <a href="{{ url_for('libro.edit', id=libro.id) }}" class="btn">Editar</a>
+                            <form action="{{ url_for('libro.delete', id=libro.id) }}" method="POST" style="display:inline;">
+                                <button type="submit" class="delete">Eliminar</button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <div class="link_container">
+                <a href="{{ url_for('categoria.index') }}" class="btn">Ir a Categorías</a>
+                <a href="{{ url_for('libro.add') }}" class="btn">Agregar Libro</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

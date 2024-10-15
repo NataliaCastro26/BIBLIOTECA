@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='edit.css') }}">
+    <title>Editar libro</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="content">
+            <h1>EDITAR LIBRO</h1>
+            <form action="{{ url_for('libro.edit', id=libro.id) }}" method="post">
+                <label for="titulo">Titulo:</label>
+                <input type="text" id="titulo" name="titulo" value="{{ libro.titulo }}" required>
+
+                <label for="genero">Genero:</label>
+                <input type="text" id="genero" name="genero" value="{{ libro.genero}}" required>
+                <button type="submit"class="styled-link">ACTUALIZAR</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

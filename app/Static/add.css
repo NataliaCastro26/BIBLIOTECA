@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f0e1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #3e2723;
+}
+
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff7d;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    max-width: 600px;
+    width: 200%;
+}
+
+.content {
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #6d4c41;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 2px solid #795548;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4e342e;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #cfd8dc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #3e2723;
+    outline: none;
+    appearance: none;
+    background-color: #ffffff;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path fill="%234e342e" d="M7 10l5 5 5-5H7z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #795548;
+    box-shadow: 0 0 5px rgba(121, 85, 72, 0.3);
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 30px; /* Añade espacio para el icono de la flecha */
+}
+
+.link_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button.styled-link {
+    background-color: #a1887f;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.styled-link:hover {
+    background-color: #8d6e63;
+}
+
+button.styled-link:active {
+    background-color: #7b5a3a;
+}
+
+@media (max-width: 480px) {
+    .main_container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    button.styled-link {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

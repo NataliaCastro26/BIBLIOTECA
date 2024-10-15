@@ -1,0 +1,107 @@
+/* categoria.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f0e1; /* Fondo claro */
+    margin: 0;
+    padding: 0;
+    color: #3e2723; /* Marrón oscuro */
+}
+
+.main_container {
+    width: 80%;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 10%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #3e2723; /* Marrón oscuro */
+    margin-top: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left; /* Mantener el texto alineado a la izquierda */
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #3e2723;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #c6bcb084; /* Fondo gris claro al pasar el mouse */
+}
+
+.actions {
+    text-align: left; /* Alinear botones a la izquierda */
+}
+
+.actions a,
+.actions .delete {
+    background-color: #d2b48c; /* Marrón claro */
+    color: #3e2723;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-left: 20%; /* Añadir un pequeño margen izquierdo */
+    transition: background-color 0.3s ease;
+}
+
+.actions a:hover {
+    background-color: #c19a6b; /* Marrón más claro al pasar el mouse */
+}
+
+.actions .delete {
+    background-color: #e74c3c; /* Rojo */
+    color: white;
+}
+
+.actions .delete:hover {
+    background-color: #c0392b; /* Rojo más oscuro */
+}
+
+.link_container {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.link_container .btn {
+    background-color: #d2b48c; /* Marrón claro */
+    color: #3e2723;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-right:7%; /* Añadir espacio entre botones */
+}
+
+.link_container .btn:last-child {
+    margin-right: 0; /* Eliminar margen derecho del último botón */
+}
+
+.link_container .btn:hover {
+    background-color: #c19a6b; /* Marrón más claro */
+}
+

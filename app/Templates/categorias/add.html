@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='add.css') }}">
+    <title>Agregar</title>
+</head>
+<body>
+    <div class="main_container">
+
+        <div class="content">
+            <h1>AGREGAR CATEGORIAS</h1>
+            <form action="{{ url_for('categoria.add')}}" method="post" enctype="multipart/form-data">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <div class="link_contsiner">
+                    <button class="styled-link" type="submit">AGREGAR</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

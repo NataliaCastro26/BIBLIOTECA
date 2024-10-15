@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoring</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='inicio.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>library</h1>
+           
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('categoria.index') }}">Categorias</a></li>
+                    <li><a href="{{ url_for('libro.inicio') }}">Libros</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h2>BIENVENIDOS!</h2>
+       
+    </div>
+
+    <main>
+        <section class="features">
+            <div class="feature">
+                <h3>Explora Nuevos Mundos</h3>
+                <p>Descubre aventuras y conocimientos en cada página. Los libros te llevan a lugares que nunca imaginaste y te ayudan a ver el mundo desde diferentes perspectivas.</p>
+            </div>
+            <div class="feature">
+                <h3>Desarrolla tu Imaginación</h3>
+                <p>La lectura no solo entretiene, sino que también alimenta tu mente. Con cada historia, tu imaginación crece y se fortalece, permitiéndote crear tus propios mundos.</p>
+            </div>
+            <div class="feature">
+                <h3>Mejora tu Conocimiento</h3>
+                <p>Los libros son una fuente infinita de sabiduría. Ya sea ficción o no ficción, cada libro tiene algo valioso que ofrecerte y ayuda a expandir tu horizonte.</p>
+            </div>
+            <div class="feature">
+                <h3>Beneficios para la Vida</h3>
+                <p>La lectura regular mejora la concentración, reduce el estrés y fomenta la empatía. Es una inversión en tu bienestar y desarrollo personal.</p>
+            </div>
+        </section>
+    </main>
+    
+    
+
+    
+</body>
+</html>

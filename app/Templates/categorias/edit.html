@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='edit.css') }}">
+    <title>Editar Categoría</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="content">
+            <h1>EDITAR CATEGORÍA</h1>
+            <form action="{{ url_for('categoria.edit', id=categoria.id) }}" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" value="{{ categoria.nombre }}" required>
+                <button type="submit" class="styled-link">ACTUALIZAR</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
